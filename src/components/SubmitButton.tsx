@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 interface SubmitButtonProps {
     type?: any;
-    children?: string;
+    children: string;
 }
 
 const Button = styled.button`
@@ -20,6 +20,11 @@ const Button = styled.button`
     font-weight: 600;
     font: 600 12px Montserrat, sans-serif;
     ${(props) => props.theme.colors.primaryBackground};
+    opacity: 0.9;
+    transition: ease all 0.2s;
+    :hover {
+        opacity: 1;
+    }
 `;
 
 const SubmitButton: React.FC = (props: SubmitButtonProps) => {

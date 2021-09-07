@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "userLogin": "daniloelias",
+            "passwordLogin": "123456",
+            "fname": "Danilo",
+            "lname": "Elias"
+        },
+        {
+            "id": 2,
+            "userLogin": "tatianacosta",
+            "passwordLogin": "000000",
+            "fname": "Tatiana",
+            "lname": "Costa"
+        }
+    ]
+}
