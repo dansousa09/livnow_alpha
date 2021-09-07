@@ -1,8 +1,9 @@
 import React from "react";
 import Head from "next/head";
 
-import Logo from "../assets/vercel.svg";
 import { Container } from "../styles/pages/Home";
+import MainContainer from "../components/MainContainer";
+import AsideMenu from "../components/AsideMenu";
 
 const Home: React.FC = () => {
     return (
@@ -11,9 +12,8 @@ const Home: React.FC = () => {
                 <title>Livnow</title>
             </Head>
 
-            <Logo />
-            <h1>Basic Structure Example</h1>
-            <p>Now you're ready to code...</p>
+            <AsideMenu />
+            <MainContainer />
         </Container>
     );
 };

@@ -9,7 +9,8 @@ const theme = {
             );`,
 
         secundaryBackground: () => "background: #FFFFFF",
-        text: "#2B2D42",
+        textDark: "#2B2D42",
+        textWhite: "#FFFFFF",
         primary: "#FD5200",
         darkPrimary: "rgba(16, 53, 65, 1)",
         shadowBox: () =>
