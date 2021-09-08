@@ -28,8 +28,11 @@ export const TitleAndSearch = styled.div`
 
 export const Switcher = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     flex: 1;
     font-weight: 700;
+    color: ${(props) => props.theme.colors.textWhite};
 `;
 
 export const hoverButton = {
@@ -50,3 +53,27 @@ export const hoverButton = {
         cursor: "pointer"
     }
 };
+
+export const AuthorizationGuideTable = styled.div`
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    height: 100%;
+    padding: 0 72px;
+    background-color: #f1f1f1;
+`;
+
+export const GuidePanel = styled.div`
+    width: 100%;
+    position: relative;
+    top: 15%;
+    height: 85%;
+    background-color: #f1f1f1;
+    margin: 0 16px;
+    border-radius: 8px 8px 0 0;
+    border-top: solid 0.5px ${(props) => props.theme.colors.darkPrimary};
+    border-left: solid 0.5px ${(props) => props.theme.colors.darkPrimary};
+    border-right: solid 0.5px ${(props) => props.theme.colors.darkPrimary};
+    -webkit-box-shadow: 0px 8px 13px -1px rgba(0, 0, 0, 0.69);
+    box-shadow: 0px 8px 13px -1px rgba(0, 0, 0, 0.69);
+`;

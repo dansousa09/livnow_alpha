@@ -14,5 +14,34 @@
             "fname": "Tatiana",
             "lname": "Costa"
         }
+    ],
+    "guides": [
+        {
+            "guia": "2323234",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "7 dias úteis",
+            "beneficiario": "Danilo de Sousa Elias",
+            "plano": "Bem-Estar 600",
+            "congenere": "Ceará",
+            "status": "Sob Auditoria"
+        },
+        {
+            "guia": "4754713",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "7 dias úteis",
+            "beneficiario": "Danilo de Sousa Elias",
+            "plano": "Bem-Estar 600",
+            "congenere": "Ceará",
+            "status": "Sob Auditoria"
+        },
+        {
+            "guia": "2215474",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "7 dias úteis",
+            "beneficiario": "Danilo de Sousa Elias",
+            "plano": "Bem-Estar 600",
+            "congenere": "Ceará",
+            "status": "Sob Auditoria"
+        }
     ]
 }
