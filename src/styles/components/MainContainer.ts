@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import TuneIcon from "@material-ui/icons/Tune";
 
 export const Header = styled.div`
     ${(props) => props.theme.colors.primaryBackground}
@@ -110,5 +111,20 @@ export const MainFooter = styled.footer`
     }
     span:first-child {
         font-weight: 400;
+    }
+`;
+
+export const TuneIconStyled = styled(TuneIcon)`
+    border-radius: 50%;
+    transition: all 0.4s;
+    background: none;
+    color: #fff;
+    font-size: 36px;
+    cursor: pointer;
+    &:hover {
+        transition: all 0.4s;
+        background-color: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.4);
+        padding: 4px;
     }
 `;

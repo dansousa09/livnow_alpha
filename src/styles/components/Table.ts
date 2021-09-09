@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import AttachFileOutlinedIcon from "@material-ui/icons/AttachFileOutlined";
 
 export const TableContainer = styled.table`
     width: 100%;
@@ -37,25 +38,6 @@ export const TableContainer = styled.table`
     }
 `;
 
-export const hoverButton = {
-    normal: {
-        borderRadius: "50%",
-        transition: "ease all 0.4s",
-        background: "none",
-        color: "#000000",
-        fontSize: 28,
-        cursor: "pointer"
-    },
-    hover: {
-        backgroundColor: "rgba(255, 255, 255, 0.4)",
-        background: "rgba(255, 255, 255, 0.4)",
-        borderRadius: "50%",
-        padding: "1px",
-        fontSize: 28,
-        cursor: "pointer"
-    }
-};
-
 export const StatusTd = styled.td`
     border-radius: 0.4rem;
     padding: 0.4rem;
@@ -65,4 +47,20 @@ export const StatusTd = styled.td`
     outline: none !important;
     font-weight: 400;
     box-sizing: border-box;
+`;
+
+export const AttachFileOutlinedIconStyled = styled(AttachFileOutlinedIcon)`
+    border-radius: 50%;
+    transition: ease all 0.4s;
+    background: none;
+    color: #000000;
+    font-size: 28px;
+    cursor: pointer;
+    &:hover {
+        transition: ease all 0.4s;
+        background-color: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.4);
+        padding: 1px;
+        transform: rotate(45deg);
+    }
 `;

@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { StatusTd, TableContainer } from "../styles/components/Table";
-import AttachFileOutlinedIcon from "@material-ui/icons/AttachFileOutlined";
-import { hoverButton } from "../styles/components/Table";
 import Link from "next/link";
 import { FaBomb } from "react-icons/fa";
+import {
+    AttachFileOutlinedIconStyled,
+    StatusTd,
+    TableContainer
+} from "../styles/components/Table";
 
 interface TableProps {
     setUser?: (userData: string) => void;
 }
 
 const Table: React.FC<TableProps> = ({ setUser }) => {
-    const [hover, setHover] = useState(false);
     const [guideData, setGuideData] = useState([]);
 
     useEffect(() => {
@@ -96,22 +97,7 @@ const Table: React.FC<TableProps> = ({ setUser }) => {
                                 <td>{guia.congenere}</td>
                                 {guideStatus()}
                                 <td>
-                                    {
-                                        <AttachFileOutlinedIcon
-                                            onMouseEnter={() => {
-                                                setHover(true);
-                                            }}
-                                            onMouseLeave={() => {
-                                                setHover(false);
-                                            }}
-                                            style={{
-                                                ...hoverButton.normal,
-                                                ...(hover
-                                                    ? hoverButton.hover
-                                                    : null)
-                                            }}
-                                        />
-                                    }
+                                    <AttachFileOutlinedIconStyled />
                                 </td>
                             </tr>
                         </Link>
