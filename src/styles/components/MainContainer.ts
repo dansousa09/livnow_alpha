@@ -76,4 +76,39 @@ export const GuidePanel = styled.div`
     border-right: solid 0.5px ${(props) => props.theme.colors.darkPrimary};
     -webkit-box-shadow: 0px 8px 13px -1px rgba(0, 0, 0, 0.69);
     box-shadow: 0px 8px 13px -1px rgba(0, 0, 0, 0.69);
+    overflow-y: scroll;
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        border: 2px solid transparent;
+        box-shadow: inset 0 0 0 20px rgb(0 0 0 / 24%);
+        border-radius: 20px;
+    }
+`;
+
+export const MainFooter = styled.footer`
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.25rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    ${(props) => props.theme.colors.primaryBackground};
+    color: ${(props) => props.theme.colors.textWhite};
+    font-weight: 600;
+    opacity: 0.6;
+    transition: all ease 0.4s;
+    &:hover {
+        transition: all ease 0.4s;
+        opacity: 1;
+    }
+    span {
+        cursor: pointer;
+    }
+    span:first-child {
+        font-weight: 400;
+    }
 `;

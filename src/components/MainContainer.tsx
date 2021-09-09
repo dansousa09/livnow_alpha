@@ -7,6 +7,7 @@ import {
     GuidePanel,
     Header,
     hoverButton,
+    MainFooter,
     Switcher,
     TitleAndSearch
 } from "../styles/components/MainContainer";
@@ -15,6 +16,7 @@ import Table from "./Table";
 
 const MainContainer: React.FC = () => {
     const [hover, setHover] = useState(false);
+    const [user, setUser] = useState("");
 
     return (
         <>
@@ -60,9 +62,13 @@ const MainContainer: React.FC = () => {
             </Header>
             <AuthorizationGuideTable>
                 <GuidePanel>
-                    <Table />
+                    <Table setUser={setUser} />
                 </GuidePanel>
             </AuthorizationGuideTable>
+            <MainFooter>
+                <span>Usuário: {user}</span>
+                <span>LIVnow v1.10.15</span>
+            </MainFooter>
         </>
     );
 };

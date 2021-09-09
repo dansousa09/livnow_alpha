@@ -21,26 +21,80 @@
             "dataDeEmissao": "07/09/2021 20:48:35",
             "prazo": "7 dias úteis",
             "beneficiario": "Danilo de Sousa Elias",
-            "plano": "Bem-Estar 600",
-            "congenere": "Ceará",
+            "plano": "022 - SAUDE EMP REDE 300 A+H",
+            "congenere": "Rio de Janeiro",
             "status": "Sob Auditoria"
         },
         {
             "guia": "4754713",
             "dataDeEmissao": "07/09/2021 20:48:35",
-            "prazo": "7 dias úteis",
-            "beneficiario": "Danilo de Sousa Elias",
-            "plano": "Bem-Estar 600",
+            "prazo": "14 dias úteis",
+            "beneficiario": "Tatiana Costa da Silva",
+            "plano": "103 - PLANO STANDARD VIP IND/FAM A+H+OBST+ODO",
             "congenere": "Ceará",
+            "status": "Liberada"
+        },
+        {
+            "guia": "2215474",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "3 dias úteis",
+            "beneficiario": "Lucas Diniz Sousa",
+            "plano": "210 - CSN UNICO EMPRESARIAL 500 A+H+OBS",
+            "congenere": "Rio Grande do Norte",
+            "status": "Negada"
+        },
+        {
+            "guia": "2215474",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "3 dias úteis",
+            "beneficiario": "Lucas Diniz Sousa",
+            "plano": "210 - CSN UNICO EMPRESARIAL 500 A+H+OBS",
+            "congenere": "Rio Grande do Norte",
+            "status": "Liberada"
+        },
+        {
+            "guia": "2215474",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "3 dias úteis",
+            "beneficiario": "Lucas Diniz Sousa",
+            "plano": "210 - CSN UNICO EMPRESARIAL 500 A+H+OBS",
+            "congenere": "Rio Grande do Norte",
+            "status": "Liberada"
+        },
+        {
+            "guia": "2215474",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "3 dias úteis",
+            "beneficiario": "Lucas Diniz Sousa",
+            "plano": "210 - CSN UNICO EMPRESARIAL 500 A+H+OBS",
+            "congenere": "Rio Grande do Norte",
             "status": "Sob Auditoria"
         },
         {
             "guia": "2215474",
             "dataDeEmissao": "07/09/2021 20:48:35",
-            "prazo": "7 dias úteis",
-            "beneficiario": "Danilo de Sousa Elias",
-            "plano": "Bem-Estar 600",
-            "congenere": "Ceará",
+            "prazo": "3 dias úteis",
+            "beneficiario": "Lucas Diniz Sousa",
+            "plano": "210 - CSN UNICO EMPRESARIAL 500 A+H+OBS",
+            "congenere": "Rio Grande do Norte",
+            "status": "Sob Auditoria"
+        },
+        {
+            "guia": "2215474",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "3 dias úteis",
+            "beneficiario": "Lucas Diniz Sousa",
+            "plano": "210 - CSN UNICO EMPRESARIAL 500 A+H+OBS",
+            "congenere": "Rio Grande do Norte",
+            "status": "Sob Auditoria"
+        },
+        {
+            "guia": "2215474",
+            "dataDeEmissao": "07/09/2021 20:48:35",
+            "prazo": "3 dias úteis",
+            "beneficiario": "Lucas Diniz Sousa",
+            "plano": "210 - CSN UNICO EMPRESARIAL 500 A+H+OBS",
+            "congenere": "Rio Grande do Norte",
             "status": "Sob Auditoria"
         }
     ]
