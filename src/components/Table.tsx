@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaBomb } from "react-icons/fa";
+import { IGuia } from "../interfaces/components/ITable";
 import {
     AttachFileOutlinedIconStyled,
     StatusTd,
@@ -8,7 +9,7 @@ import {
 } from "../styles/components/Table";
 
 interface TableProps {
-    setUser?: (userData: string) => void;
+    setUser: (userData: string) => void | Promise<Object>;
 }
 
 const Table: React.FC<TableProps> = ({ setUser }) => {
@@ -18,18 +19,17 @@ const Table: React.FC<TableProps> = ({ setUser }) => {
         const fetchGuides = async () => {
             const guidesUrl = "http://localhost:3001/guides";
             const response = await fetch(guidesUrl);
-            const guideData = await response.json();
-            setGuideData(guideData);
+            const data = await response.json();
+            setGuideData(data);
         };
         fetchGuides();
         const fetchUsers = async () => {
-            const guidesUrl = "http://localhost:3001/users";
-            const response = await fetch(guidesUrl);
+            const usersUrl = "http://localhost:3001/users";
+            const response = await fetch(usersUrl);
             const userData = await response.json();
             setUser(
                 `${userData[1].fname}  ${userData[1].lname} (${userData[1].userLogin})`
             );
-            console.log(userData);
         };
         fetchUsers();
     }, []);
@@ -51,7 +51,7 @@ const Table: React.FC<TableProps> = ({ setUser }) => {
                 </tr>
             </thead>
             <tbody>
-                {guideData.map((guia, index) => {
+                {guideData.map((guia: IGuia, index: number) => {
                     const guideStatus = () => {
                         switch (guia.status) {
                             case "Liberada": {
