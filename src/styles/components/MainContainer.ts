@@ -1,12 +1,18 @@
 import styled from "styled-components";
 import TuneIcon from "@material-ui/icons/Tune";
 
-export const Header = styled.div`
+export const Container = styled.div`
+    flex: 1;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+`;
+
+export const Header = styled.header`
     ${(props) => props.theme.colors.primaryBackground}
     height: 30%;
     width: 100%;
-    position: absolute;
-    top: 0;
+
     padding: 25px 32px;
     display: flex;
     align-items: flex-start;
@@ -61,7 +67,8 @@ export const AuthorizationGuideTable = styled.div`
     justify-content: center;
     height: 100%;
     padding: 0 72px;
-    background-color: #f1f1f1;
+    margin-top: -200px;
+    background-color: none;
 `;
 
 export const GuidePanel = styled.div`

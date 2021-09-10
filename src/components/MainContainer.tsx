@@ -5,6 +5,7 @@ import { FormControlLabel, FormGroup, Switch } from "@material-ui/core";
 import Table from "./Table";
 import {
     AuthorizationGuideTable,
+    Container,
     GuidePanel,
     Header,
     MainFooter,
@@ -17,7 +18,7 @@ const MainContainer: React.FC = () => {
     const [user, setUser] = useState("");
 
     return (
-        <>
+        <Container>
             <Header>
                 <TitleAndSearch>
                     <LibraryBooksOutlinedIcon style={{ fontSize: 36 }} />
@@ -56,7 +57,7 @@ const MainContainer: React.FC = () => {
                 <span>Usuário: {user}</span>
                 <span>LIVnow v1.10.15</span>
             </MainFooter>
-        </>
+        </Container>
     );
 };
 
