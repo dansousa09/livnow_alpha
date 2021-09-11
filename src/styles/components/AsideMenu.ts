@@ -19,9 +19,9 @@ export const AsideBar = styled.aside`
     opacity: 0.9;
     -webkit-box-shadow: 10px 0px 18px 1px rgba(0, 0, 0, 0.49);
     box-shadow: 10px 0px 18px 1px rgba(0, 0, 0, 0.49);
-    &:hover {
+    /* &:hover {
         opacity: 1;
-    }
+    } */
 
     hr {
         width: 50%;

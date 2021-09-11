@@ -1,12 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-interface SubmitButtonProps {
-    type?: any;
-    children: string;
-}
-
-const Button = styled.button`
+const Button = styled.div`
     margin-top: 32px;
     width: 75%;
     height: 32px;
@@ -27,8 +22,8 @@ const Button = styled.button`
     }
 `;
 
-const SubmitButton: React.FC = (props: SubmitButtonProps) => {
-    return <Button type={props.type}>{props.children}</Button>;
+const SubmitButton: React.FC = ({ children }) => {
+    return <Button>{children}</Button>;
 };
 
 export default SubmitButton;
