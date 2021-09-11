@@ -39,11 +39,11 @@ const Login: React.FC = () => {
                             }}
                         />
                     </FormControl>
-                    <div>
-                        <Link href="/">
+                    <Link href="/">
+                        <div>
                             <SubmitButton>Entrar</SubmitButton>
-                        </Link>
-                    </div>
+                        </div>
+                    </Link>
                 </form>
             </LoginPanel>
         </Container>
